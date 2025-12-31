@@ -11,18 +11,18 @@ export default async function InvitePage({
   const decodedName = decodeURIComponent(name)
 
   return (
-    <main className="relative min-h-screen bg-[#fff5f5] flex flex-col items-center justify-center p-4 md:p-8">
+    <main className="relative min-h-screen bg-[#fff5f5] flex flex-col items-center p-4 md:p-8">
       {/* Background with falling hearts */}
       <HeartBackground />
 
-      <div className="relative z-10 w-full max-w-md h-[85vh] md:h-[90vh] overflow-hidden rounded-2xl shadow-2xl border border-red-100">
-        {/* Header with inviter name */}
-        <div className="absolute top-0 left-0 right-0 bg-gradient-to-b from-red-50 to-transparent z-10 pt-4 pb-12 px-4 text-center">
-          <p className="text-red-600 font-bold text-xl tracking-wider drop-shadow-lg italic" style={{ fontFamily: "'Brush Script MT', 'Lucida Handwriting', cursive", textShadow: '2px 2px 4px rgba(0,0,0,0.1)' }}>
-            💌 Thân mời: {decodedName}
-          </p>
-        </div>
+      {/* Header with inviter name - outside the box */}
+      <div className="relative z-10 text-center mb-4 mt-2">
+        <p className="text-red-600 font-bold text-xl tracking-wider drop-shadow-lg italic" style={{ fontFamily: "'Brush Script MT', 'Lucida Handwriting', cursive", textShadow: '2px 2px 4px rgba(0,0,0,0.1)' }}>
+          💌 Thân mời: {decodedName}
+        </p>
+      </div>
 
+      <div className="relative z-10 w-full max-w-md h-[80vh] md:h-[85vh] overflow-hidden rounded-2xl shadow-2xl border border-red-100">
         <iframe
           src="https://cinelove.me/s/pc/longandchuyen"
           className="absolute inset-0 w-[100%] h-full border-0 pointer-events-auto"
