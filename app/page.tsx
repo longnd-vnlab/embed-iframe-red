@@ -19,8 +19,8 @@ export default function Page() {
           
           {/* Screen container */}
           <div className="relative w-[343px] h-[695px] md:w-[403px] md:h-[825px] bg-black rounded-[45px] overflow-hidden">
-            {/* Dynamic Island */}
-            <div className="absolute top-[12px] left-1/2 -translate-x-1/2 z-20 w-[120px] h-[35px] md:w-[126px] md:h-[37px] bg-black rounded-full" />
+            {/* Dynamic Island - only on PC */}
+            <div className="hidden md:block absolute top-[10px] left-1/2 -translate-x-1/2 z-20 w-[90px] h-[26px] bg-black rounded-full" />
             
             {/* Screen content */}
             <iframe
