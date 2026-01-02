@@ -9,15 +9,15 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: 'Long And Chuyen Invitation',
   description: 'Thiệp mời đám cưới Long & Chuyên',
-  generator: 'v0.app',
+  metadataBase: new URL('https://long-chuyen-wedding.online'),
   openGraph: {
     title: 'Long And Chuyen Invitation',
     description: 'Thiệp mời đám cưới Long & Chuyên',
-    url: 'https://long-and-chuyen.netlify.app',
+    url: 'https://long-chuyen-wedding.online',
     siteName: 'Long And Chuyen Invitation',
     images: [
       {
-        url: '/placeholder.jpg',
+        url: '/images/DSC_1051.jpg',
         width: 1200,
         height: 630,
         alt: 'Long And Chuyen Wedding Invitation',
@@ -30,23 +30,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Long And Chuyen Invitation',
     description: 'Thiệp mời đám cưới Long & Chuyên',
-    images: ['/placeholder.jpg'],
+    images: ['/images/DSC_1051.jpg'],
   },
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
+    icon: '/favicon.ico',
     apple: '/apple-icon.png',
   },
 }
