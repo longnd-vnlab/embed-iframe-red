@@ -16,7 +16,7 @@ export default async function InvitePage({
       <HeartBackground />
 
       {/* Header with inviter name - outside the box */}
-      <div className="relative z-10 text-center mb-4 mt-2">
+      <div className="relative z-10 text-center mb-1 mt-2">
         <p className="text-red-600 font-bold text-xl tracking-wider drop-shadow-lg italic" style={{ fontFamily: "'Brush Script MT', 'Lucida Handwriting', cursive", textShadow: '2px 2px 4px rgba(0,0,0,0.1)' }}>
           💌 Thân mời: {decodedName}
         </p>
