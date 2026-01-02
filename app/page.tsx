@@ -6,7 +6,7 @@ export default function Page() {
       {/* Background with falling hearts */}
       <HeartBackground />
 
-      <div className="relative z-10 w-full max-w-md h-[85vh] md:h-[90vh] overflow-hidden rounded-2xl shadow-2xl border border-red-100">
+      <div className="relative z-10 w-full max-w-[428px] h-[85vh] md:h-[90vh] overflow-hidden rounded-2xl shadow-2xl border border-red-100">
         <iframe
           src="https://cinelove.me/s/pc/longandchuyen"
           className="absolute inset-0 w-[100%] h-full border-0 pointer-events-auto"
